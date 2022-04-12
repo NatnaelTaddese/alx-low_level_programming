@@ -20,27 +20,27 @@ while (a <= 9)
 		rep = a * b;
 		if (b == 0)
 		{
-			_putchar('0' + rep);
+			putchar('0' + rep);
 		}
 		else if (rep < 10)
 		{
-			_putchar(' ');
-			_putchar('0' + rep);
+			putchar(' ');
+			putchar('0' + rep);
 		}
 		else
 		{
-			_putchar('0' + rep / 10);
-			_putchar('0' + rep % 10);
+			putchar('0' + rep / 10);
+			putchar('0' + rep % 10);
 		}
 
 		if (b < 9)
 		{
-			_putchar(',');
-			_putchar(' ');
+			putchar(',');
+			putchar(' ');
 		}
 		b++;
 	}
-	_putchar('\n');
+	putchar('\n');
 	a++;
 }
 
