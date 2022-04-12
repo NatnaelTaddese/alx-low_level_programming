@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_times_table - prints times table
@@ -20,32 +21,32 @@ while (a <= n)
 	{
 		rep = a * b;
 		if (b == 0)
-			_putchar('0' + rep);
+			putchar('0' + rep);
 		else if (rep < 10)
 		{
-			_putchar(' ');
-			_putchar(' ');
-			_putchar('0' + rep);
+			putchar(' ');
+			putchar(' ');
+			putchar('0' + rep);
 		}
 		else if (rep < 100)
 		{
-			_putchar(' ');
-			_putchar('0' + rep / 10);
-			_putchar('0' + rep % 10);
+			putchar(' ');
+			putchar('0' + rep / 10);
+			putchar('0' + rep % 10);
 		}
 		else
 		{
-			_putchar('0' + rep / 100);
-			_putchar('0' + (rep - 100) / 10);
-			_putchar('0' + rep % 10);
+			putchar('0' + rep / 100);
+			putchar('0' + (rep - 100) / 10);
+			putchar('0' + rep % 10);
 		}
 		if (b < n)
 		{
-			_putchar(',');
-			_putchar(' ');
+			putchar(',');
+			putchar(' ');
 		}
 	}
-	_putchar('\n');
+	putchar('\n');
 	a++;
 }
 }
